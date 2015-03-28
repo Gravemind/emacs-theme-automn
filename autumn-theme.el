@@ -1,8 +1,8 @@
-;;; automn-theme.el --- Automn theme for Emacs
+;;; autoumn-theme.el --- Autumn theme for Emacs
 
 ;; Copyright (C) 2011-2014 Jordan Galby
 ;; Author: Jordan Galby
-;; URL: http://github.com/Gravemind/emacs-theme-automn
+;; URL: http://github.com/Gravemind/emacs-theme-autumn
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-(deftheme automn "Low contrast dark automn theme")
+(deftheme autumn "Low contrast dark autumn theme")
 
 (let (
       (background   "#202020")
@@ -47,7 +47,7 @@
     (setq underline-minimum-offset 4)
 
     (custom-theme-set-faces
-     'automn
+     'autumn
 
      `(cursor ((t (:background "cyan"))))
 
@@ -196,6 +196,6 @@
     )
   )
 
-(provide-theme 'automn)
+(provide-theme 'autumn)
 
 ;;EOF
