@@ -23,6 +23,8 @@
       (background   "#202020")
       (foreground   "#b0b0b0")
 
+      (bg-hl        "#282828")
+
       (selection    "#404040")
 
       (comment      "#909090")
@@ -50,6 +52,8 @@
      'autumn
 
      `(cursor ((t (:background "cyan"))))
+
+     `(default ((t (:foreground ,foreground))))
 
      ;; Languages
      `(font-lock-builtin-face ((t (:foreground ,otherkeyw))))
@@ -142,8 +146,17 @@
      `(diff-refine-added   ((t (:background "#384a36"))))
 
      `(magit-diff-none ((nil ())))
-     ;;`(magit-item-highlight ((nil ())))
-     `(magit-item-highlight ((t (:background ,background))))
+     ;`(magit-diff-removed-highlight ((t (:background ,background :foreground ,colorrem))))
+     ;`(magit-diff-added-highlight ((t (:background ,background :foreground ,coloradd))))
+     `(magit-diff-removed-highlight ((t (:background ,bg-hl :foreground ,colorrem))))
+     `(magit-diff-added-highlight ((t (:background ,bg-hl :foreground ,coloradd))))
+     `(magit-diff-removed ((t (:foreground ,colorrem))))
+     `(magit-diff-added ((t (:foreground ,coloradd))))
+     ;; `(magit-item-highlight ((nil ())))
+     `(magit-item-highlight ((t (:background ,bg-hl))))
+     `(magit-diff-context-highlight ((t (:background ,bg-hl))))
+     `(magit-diff-file-heading ((t (:background "#AAA" :foreground "#222"))))
+     `(magit-diff-hunk-heading-highlight ((t (:background "#EEE" :foreground "#222"))))
 
      ;;
      ;; auto-highlight-symbol
