@@ -68,6 +68,7 @@
      ;; Comments
      `(font-lock-comment-delimiter-face ((t (:foreground ,comment))))
      `(font-lock-comment-face ((t (:foreground ,comment :slant italic))))
+     `(shadow ((t (:foreground ,comment))))
 
      ;; Mode line
      `(mode-line ((t (:background "#555555" :foreground "#f6f3e8" :box (:line-width 2 :color "#555555") :weight normal))))
