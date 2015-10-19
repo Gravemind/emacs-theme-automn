@@ -156,8 +156,8 @@
      ;; `(magit-item-highlight ((nil ())))
      `(magit-item-highlight ((t (:background ,bg-hl))))
      `(magit-diff-context-highlight ((t (:background ,bg-hl))))
-     `(magit-diff-file-heading ((t (:background "#AAA" :foreground "#222"))))
-     `(magit-diff-hunk-heading-highlight ((t (:background "#EEE" :foreground "#222"))))
+     `(magit-diff-file-heading ((t (:background "#000" :foreground ,foreground))))
+     `(magit-diff-hunk-heading-highlight ((t (:background ,foreground :foreground "#222"))))
 
      ;;
      ;; auto-highlight-symbol
