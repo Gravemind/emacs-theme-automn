@@ -146,6 +146,12 @@
      `(diff-refine-removed ((t (:background "#493434"))))
      `(diff-refine-added   ((t (:background "#384a36"))))
 
+     `(smerge-mine ((t (:background nil))))
+     `(smerge-base ((t (:background nil))))
+     `(smerge-other ((t (:background nil))))
+     `(smerge-refined-removed ((t (:background "#493434"))))
+     `(smerge-refine-added   ((t (:background "#384a36"))))
+
      `(magit-diff-none ((nil ())))
      ;`(magit-diff-removed-highlight ((t (:background ,background :foreground ,colorrem))))
      ;`(magit-diff-added-highlight ((t (:background ,background :foreground ,coloradd))))
