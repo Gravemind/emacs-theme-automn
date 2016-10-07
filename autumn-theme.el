@@ -150,7 +150,7 @@
      `(smerge-base ((t (:background nil))))
      `(smerge-other ((t (:background nil))))
      `(smerge-refined-removed ((t (:background "#493434"))))
-     `(smerge-refine-added   ((t (:background "#384a36"))))
+     `(smerge-refined-added   ((t (:background "#384a36"))))
 
      `(magit-diff-none ((nil ())))
      ;`(magit-diff-removed-highlight ((t (:background ,background :foreground ,colorrem))))
