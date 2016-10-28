@@ -178,6 +178,15 @@
      ;;
      `(rtags-skippedline ((t (:background "#333"))))
 
+     ;;
+     ;; helm
+     ;;
+     `(helm-candidate-number ((t nil)))
+     `(helm-header ((t (:foreground ,color2 :slant italic))))
+     `(helm-match ((t (:foreground ,color1))))
+     `(helm-selection ((t (:background ,selection))))
+     `(helm-source-header ((t (:foreground ,color2))))
+
      )
 
     (if (window-system)
