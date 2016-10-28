@@ -179,6 +179,13 @@
      `(rtags-skippedline ((t (:background nil))))
 
      ;;
+     ;; ido
+     ;;
+     `(ido-first-match ((t (:foreground ,otherkeyw))))
+     `(ido-only-match ((t (:foreground ,otherkeyw))))
+     `(ido-subdir ((t nil)))
+
+     ;;
      ;; helm
      ;;
      `(helm-candidate-number ((t nil)))
