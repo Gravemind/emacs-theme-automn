@@ -86,7 +86,7 @@
 
      `(minibuffer-prompt ((t (:foreground "#36b5b1"))))
 
-     `(linum ((t (:foreground "#404040" :background ,background))))
+     `(linum ((t (:foreground ,selection :background ,background))))
      `(highlight ((t (:background "gray15" :height 1.0 :weight normal))))
      `(mouse ((t (:background "white"))))
      `(region ((t (:background ,selection))))
@@ -176,7 +176,7 @@
      ;;
      ;; rtags
      ;;
-     `(rtags-skippedline ((t (:background "#333"))))
+     `(rtags-skippedline ((t (:background nil))))
 
      ;;
      ;; helm
@@ -201,8 +201,8 @@
                 ))
 
     (setq-default ansi-color-names-vector
-                  ["black" "tomato" "PaleGreen2" "gold1"
-                   "DeepSkyBlue1" "MediumOrchid1" "cyan" "white"])
+                  ["#000000" "#cf6171" "#B8EB6C" "#fff796" "#557DA1" "#963c59" "#45A397" "#bebebe"]
+                  )
 
     ;; (setq buffer-menu-buffer-font-lock-keywords
     ;;     '(("^....[*]Man .*Man.*" . font-lock-variable-name-face) ; Man page
