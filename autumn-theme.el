@@ -183,6 +183,7 @@
      ;;
      `(ido-first-match ((t (:foreground ,otherkeyw))))
      `(ido-only-match ((t (:foreground ,otherkeyw))))
+     `(ido-virtual ((t (:foreground ,comment))))
      `(ido-subdir ((t nil)))
 
      ;;
