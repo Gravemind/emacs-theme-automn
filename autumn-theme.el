@@ -41,6 +41,9 @@
 
       (useless      "#602929")
 
+      (ansi-bold-blue   "#4B84B8")
+      (ansi-bold-cyan   "#71bebe")
+
       )
 
   (progn
@@ -179,6 +182,12 @@
      `(rtags-skippedline ((t (:background nil))))
 
      ;;
+     ;; Man
+     ;;
+     `(Man-overstrike ((t (:foreground ,ansi-bold-blue :weight bold))))
+     `(Man-underline ((t (:foreground ,ansi-bold-cyan :weight bold))))
+
+     ;;
      ;; ido
      ;;
      `(ido-first-match ((t (:foreground ,otherkeyw))))
@@ -209,7 +218,7 @@
                 ))
 
     (setq-default ansi-color-names-vector
-                  ["#000000" "#cf6171" "#B8EB6C" "#fff796" "#557DA1" "#963c59" "#45A397" "#bebebe"]
+                  ["#000000" "#cf6171" "#B8EB6C" "#fff796" ansi-bold-blue "#963c59" ansi-bold-cyan "#bebebe"]
                   )
 
     ;; (setq buffer-menu-buffer-font-lock-keywords
