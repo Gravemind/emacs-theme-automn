@@ -204,6 +204,10 @@
      `(helm-selection ((t (:background ,selection))))
      `(helm-source-header ((t (:foreground ,color2))))
 
+     `(helm-grep-file ((t (:inherit compilation-info))))
+     `(helm-grep-finish ((t nil)))
+     `(helm-grep-lineno ((t (:inherit compilation-line-number))))
+
      )
 
     (if (window-system)
