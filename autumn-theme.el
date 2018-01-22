@@ -225,7 +225,7 @@
                 ))
 
     (setq-default ansi-color-names-vector
-                  ["#000000" "#cf6171" "#B8EB6C" "#fff796" ansi-bold-blue "#963c59" ansi-bold-cyan "#bebebe"]
+                  ["#666666" "#cf6171" "#B8EB6C" "#fff796" "#4B84B8" "#cf9ebe" "#71bebe" "#ffffff"]
                   )
 
     ;; (setq buffer-menu-buffer-font-lock-keywords
