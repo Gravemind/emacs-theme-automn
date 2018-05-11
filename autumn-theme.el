@@ -136,6 +136,12 @@
      `(git-gutter-fr+-added    ((t (:foreground "#393"))))
      `(git-gutter-fr+-deleted  ((t (:foreground "#722"))))
 
+     `(dired-ignored ((t (:inherit shadow :foreground "DimGray"))))
+     `(dired-k-added ((t (:foreground ,coloradd :weight bold))))
+     `(dired-k-commited ((t (:foreground ,coloradd :weight bold))))
+     `(dired-k-directory ((t nil)))
+     `(dired-k-modified ((t (:foreground ,colorrem :weight bold))))
+     `(dired-k-untracked ((t (:foreground "#8B3D3D" :weight bold))))
 
      ;;
      ;; diff
@@ -227,6 +233,26 @@
     (setq-default ansi-color-names-vector
                   ["#666666" "#cf6171" "#B8EB6C" "#fff796" "#4B84B8" "#cf9ebe" "#71bebe" "#ffffff"]
                   )
+
+    ;; #9CABBA
+    ;; #A59FA8
+    ;; #AE9397
+    ;; #B88886
+    ;; #C17C75
+    ;; #CB7164
+    ;; #D46553
+    ;; #DD5942
+    ;; #E74E31
+    ;; #F04220
+    ;; #FA370F
+    (setq-default dired-k-size-colors
+                  '((10000     . "#9CABBA") ; 10K
+                    (50000     . "#AE9397") ; 50K
+                    (100000    . "#B88886") ; 100K
+                    (1000000   . "#CB7164") ; 1M
+                    (10000000  . "#DD5942") ; 10M
+                    (100000000 . "#F04220") ; 100M
+                    ))
 
     ;; (setq buffer-menu-buffer-font-lock-keywords
     ;;     '(("^....[*]Man .*Man.*" . font-lock-variable-name-face) ; Man page
