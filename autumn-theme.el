@@ -252,7 +252,16 @@
                     (1000000   . "#CB7164") ; 1M
                     (10000000  . "#DD5942") ; 10M
                     (100000000 . "#F04220") ; 100M
-                    ))
+                    )
+                  dired-k-date-colors
+                  '((0        . "red")     ; 0
+                    (86400    . "#d0d0d0") ; 1day
+                    (604800   . "#b0b0b0") ; 1week
+                    (2419200  . "#909090") ; 4weeks
+                    (15778800 . "#707070") ; 6months
+                    (31557600 . "#505050") ; 1year
+                    )
+                  )
 
     ;; (setq buffer-menu-buffer-font-lock-keywords
     ;;     '(("^....[*]Man .*Man.*" . font-lock-variable-name-face) ; Man page
