@@ -178,6 +178,12 @@
      `(magit-diff-hunk-heading-highlight ((t (:background ,foreground :foreground "#222"))))
 
      ;;
+     ;; magit
+     ;;
+     `(magit-branch-local ((t (:foreground "DarkSeaGreen2"))))
+     `(magit-branch-remote ((t (:foreground "LightSkyBlue1"))))
+
+     ;;
      ;; auto-highlight-symbol
      ;;
 
