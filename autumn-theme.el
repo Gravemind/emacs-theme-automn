@@ -129,12 +129,16 @@
      `(buffer-menu-modified-mark ((t (:foreground ,strings))))
      `(buffer-menu-size ((t (:foreground ,color3))))
 
-     `(git-gutter-fr:modified ((t (:foreground "#CA0"))))
-     `(git-gutter-fr:added    ((t (:foreground "#393"))))
      `(git-gutter-fr:deleted  ((t (:foreground "#722"))))
-     `(git-gutter-fr+-modified ((t (:foreground "#CA0"))))
-     `(git-gutter-fr+-added    ((t (:foreground "#393"))))
+     `(git-gutter-fr:added    ((t (:foreground "#393"))))
+     `(git-gutter-fr:modified ((t (:foreground "#CA0"))))
      `(git-gutter-fr+-deleted  ((t (:foreground "#722"))))
+     `(git-gutter-fr+-added    ((t (:foreground "#393"))))
+     `(git-gutter-fr+-modified ((t (:foreground "#CA0"))))
+
+     `(diff-hl-delete ((t (:foreground "#853434"))))
+     `(diff-hl-insert ((t (:foreground "#3B7C3B"))))
+     `(diff-hl-change ((t (:foreground "#45517C"))))
 
      `(dired-ignored ((t (:inherit shadow :foreground "DimGray"))))
      `(dired-k-added ((t (:foreground ,coloradd :weight bold))))
