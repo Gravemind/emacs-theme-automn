@@ -163,8 +163,10 @@
      `(diff-refine-added   ((t (:background "#384a36"))))
 
      `(smerge-mine ((t (:background nil))))
+     `(smerge-lower ((t (:background nil))))
      `(smerge-base ((t (:background nil))))
      `(smerge-other ((t (:background nil))))
+     `(smerge-upper ((t (:background nil))))
      `(smerge-refined-removed ((t (:background "#493434"))))
      `(smerge-refined-added   ((t (:background "#384a36"))))
 
