@@ -89,7 +89,7 @@
 
      `(minibuffer-prompt ((t (:foreground "#36b5b1"))))
 
-     `(linum ((t (:foreground ,selection :background ,background))))
+     `(linum ((t (:foreground "#505050" :background ,background))))
      `(highlight ((t (:background "gray15" :height 1.0 :weight normal))))
      `(mouse ((t (:background "white"))))
      `(region ((t (:background ,selection))))
