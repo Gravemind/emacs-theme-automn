@@ -188,6 +188,8 @@
      ;;
      `(magit-branch-local ((t (:foreground "DarkSeaGreen2"))))
      `(magit-branch-remote ((t (:foreground "LightSkyBlue1"))))
+     ;; disable remote head branch face, make it like any other remote branch
+     `(magit-branch-remote-head ((t (:inherit magit-branch-remote))))
 
      ;;
      ;; auto-highlight-symbol
