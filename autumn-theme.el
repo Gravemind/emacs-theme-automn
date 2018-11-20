@@ -22,6 +22,7 @@
 (let (
       (background   "#202020")
       (foreground   "#b0b0b0")
+      (cursor       "#00ffff")
 
       (bg-hl        "#282828")
 
@@ -54,7 +55,7 @@
     (custom-theme-set-faces
      'autumn
 
-     `(cursor ((t (:background "cyan"))))
+     `(cursor ((t (:background ,cursor))))
 
      `(default ((t (:foreground ,foreground))))
 
@@ -230,6 +231,15 @@
      `(helm-grep-file ((t (:inherit compilation-info))))
      `(helm-grep-finish ((t nil)))
      `(helm-grep-lineno ((t (:inherit compilation-line-number))))
+
+     ;; history
+     `(history-prompt ((t (:inherit minibuffer-prompt))))
+     `(history-current-history ((t (:background ,cursor :foreground ,background))))
+     `(history-other-history ((t nil)))
+
+     ;; visible-mark
+     `(visible-mark-face1 ((t (:background "#080808" :foreground nil))))
+     `(visible-mark-face2 ((t (:background "#181818" :foreground nil))))
 
      )
 
