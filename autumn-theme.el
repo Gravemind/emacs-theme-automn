@@ -44,8 +44,12 @@
 
       (useless      "#602929")
 
-      (ansi-bold-blue   "#4B84B8")
-      (ansi-bold-cyan   "#71bebe")
+      (ansi-bold-blue "#4B84B8")
+      (ansi-bold-cyan "#71bebe")
+
+      (winframe-border "#354044")
+      (winframe-active "#354044")
+      (winframe-inacti "#253034")
 
       )
 
@@ -77,13 +81,15 @@
      `(shadow ((t (:foreground ,comment))))
 
      ;; Mode line
-     `(mode-line ((t (:background "#555555" :foreground "#f6f3e8" :box (:line-width 2 :color "#555555") :weight normal))))
-     `(mode-line-buffer-id ((t nil)))
-     `(mode-line-emphasis ((t (:weight normal))))
+     `(mode-line ((t (:background ,winframe-active :foreground "#a0a0a0" :box (:line-width 4 :color ,winframe-active) :weight normal))))
+     `(mode-line-inactive ((t (:inherit mode-line :background ,winframe-inacti :foreground "#a0a0a0" :box (:line-width 4 :color ,winframe-inacti) :weight normal))))
+     `(mode-line-buffer-id ((t (:foreground "#d0d0d0"))))
      `(mode-line-highlight ((t (:box nil))))
-     `(mode-line-inactive ((t (:inherit mode-line :background "#333333" :foreground "#857b6f" :box (:line-width 2 :color "#333333") :weight normal))))
-     `(vertical-border ((t (:foreground "#303030" ))))
-     `(fringe ((t (:foreground "#303030" :background ,background ))))
+     `(vertical-border ((t (:foreground ,winframe-border))))
+     `(window-divider ((t (:foreground ,winframe-border))))
+     `(window-divider-first-pixel ((t (:inherit window-divider))))
+     `(window-divider-last-pixel ((t (:inherit window-divider))))
+     `(fringe ((t (:foreground ,winframe-border :background ,background))))
 
      ;; White space mode
      `(whitespace-space-before-tab ((t (:background ,useless))))
@@ -92,7 +98,7 @@
 
      `(minibuffer-prompt ((t (:foreground "#36b5b1"))))
 
-     `(linum ((t (:foreground "#505050" :background ,background))))
+     `(linum ((t (:foreground ,winframe-border :background ,background))))
      `(highlight ((t (:background "gray15" :height 1.0 :weight normal))))
      `(mouse ((t (:background "white"))))
      `(region ((t (:background ,selection))))
