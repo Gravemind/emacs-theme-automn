@@ -39,6 +39,8 @@
 
       (colorrem     "#B95151")
       (coloradd     "#6AAB6A")
+      (colorrem-bg  "#493434")
+      (coloradd-bg  "#384a36")
 
       (useless      "#602929")
 
@@ -151,25 +153,27 @@
      ;;
      ;; diff
      ;;
-     `(diff-header ((t (:background "#BBB" :foreground "#333"))))
-     `(diff-file-header ((t (:background "#EEE" :foreground "#333" ))))
+     `(diff-context ((t nil)))
+     `(diff-file-header ((t (:background "#aaa" :foreground "#000" :weight bold))))
+     `(diff-function ((t (:inherit diff-file-header))))
+     `(diff-header ((t (:background "#aaa" :foreground "#555" :weight bold))))
 
      `(diff-indicator-removed ((t (:background ,colorrem :foreground ,background))))
      `(diff-indicator-added   ((t (:background ,coloradd :foreground ,background))))
 
      `(diff-removed ((t (:background nil :foreground ,colorrem))))
      `(diff-added ((t (:background nil :foreground ,coloradd))))
+     `(diff-refine-removed ((t (:background ,colorrem-bg))))
+     `(diff-refine-added   ((t (:background ,coloradd-bg))))
 
-     `(diff-refine-removed ((t (:background "#493434"))))
-     `(diff-refine-added   ((t (:background "#384a36"))))
-
-     `(smerge-mine ((t (:background nil))))
-     `(smerge-lower ((t (:background nil))))
-     `(smerge-base ((t (:background nil))))
-     `(smerge-other ((t (:background nil))))
-     `(smerge-upper ((t (:background nil))))
-     `(smerge-refined-removed ((t (:background "#493434"))))
-     `(smerge-refined-added   ((t (:background "#384a36"))))
+     `(magit-item-highlight ((t (:background ,bg-hl))))
+     `(magit-section-highlight ((t (:background ,bg-hl))))
+     `(magit-diff-context ((t nil)))
+     `(magit-diff-context-highlight ((t (:background ,bg-hl))))
+     `(magit-diff-file-heading ((t (:background "#000" :foreground "#bbb"))))
+     `(magit-diff-file-heading-highlight ((t (:inherit magit-file-heading :background "#111"))))
+     `(magit-diff-hunk-heading ((t (:background "#333" :foreground "#ddd"))))
+     `(magit-diff-hunk-heading-highlight ((t (:background "#444" :foreground "#ddd"))))
 
      `(magit-diff-none ((nil ())))
      ;`(magit-diff-removed-highlight ((t (:background ,background :foreground ,colorrem))))
@@ -178,11 +182,15 @@
      `(magit-diff-added-highlight ((t (:background ,bg-hl :foreground ,coloradd))))
      `(magit-diff-removed ((t (:foreground ,colorrem))))
      `(magit-diff-added ((t (:foreground ,coloradd))))
-     ;; `(magit-item-highlight ((nil ())))
-     `(magit-item-highlight ((t (:background ,bg-hl))))
-     `(magit-diff-context-highlight ((t (:background ,bg-hl))))
-     `(magit-diff-file-heading ((t (:background "#000" :foreground ,foreground))))
-     `(magit-diff-hunk-heading-highlight ((t (:background ,foreground :foreground "#222"))))
+
+     `(smerge-mine ((t (:background nil))))
+     `(smerge-lower ((t (:background nil))))
+     `(smerge-base ((t (:background nil))))
+     `(smerge-other ((t (:background nil))))
+     `(smerge-upper ((t (:background nil))))
+
+     `(smerge-refined-removed ((t (:background ,colorrem-bg))))
+     `(smerge-refined-added   ((t (:background ,coloradd-bg))))
 
      ;;
      ;; magit
