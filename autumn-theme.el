@@ -50,6 +50,7 @@
       (winframe-border "#354044")
       (winframe-active "#354044")
       (winframe-inacti "#253034")
+      (winframe-fringe "#5d696d")
 
       )
 
@@ -89,7 +90,7 @@
      `(window-divider ((t (:foreground ,winframe-border))))
      `(window-divider-first-pixel ((t (:inherit window-divider))))
      `(window-divider-last-pixel ((t (:inherit window-divider))))
-     `(fringe ((t (:foreground ,winframe-border :background ,background))))
+     `(fringe ((t (:foreground ,winframe-fringe :background ,background))))
 
      ;; White space mode
      `(whitespace-space-before-tab ((t (:background ,useless))))
