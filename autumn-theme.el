@@ -253,12 +253,25 @@
      `(helm-grep-finish ((t nil)))
      `(helm-grep-lineno ((t (:inherit compilation-line-number))))
 
+     ;;
+     ;; ivy
+     ;;
+     `(ivy-current-match ((t (:background ,selection))))
+     `(ivy-minibuffer-match-face-1 ((t (:background ,selection))))
+     `(ivy-minibuffer-match-face-2 ((t (:foreground ,color2))))
+     `(ivy-minibuffer-match-face-3 ((t (:inherit ivy-minibuffer-match-face-2))))
+     `(ivy-minibuffer-match-face-4 ((t (:inherit ivy-minibuffer-match-face-2))))
+
+     ;;
      ;; history
+     ;;
      `(history-prompt ((t (:inherit minibuffer-prompt))))
      `(history-current-history ((t (:background ,cursor :foreground ,background))))
      `(history-other-history ((t nil)))
 
+     ;;
      ;; visible-mark
+     ;;
      `(visible-mark-face1 ((t (:background "#080808" :foreground nil))))
      `(visible-mark-face2 ((t (:background "#181818" :foreground nil))))
 
