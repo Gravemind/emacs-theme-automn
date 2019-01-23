@@ -26,7 +26,7 @@
 
       (bg-hl        "#282828")
 
-      (selection    "#404040")
+      (selection    "#303030")
 
       (comment      "#909090")
 
