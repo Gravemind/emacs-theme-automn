@@ -156,7 +156,7 @@
      `(diff-hl-insert ((t (:foreground "#3B7C3B"))))
      `(diff-hl-change ((t (:foreground "#45517C"))))
 
-     `(dired-ignored ((t (:inherit shadow :foreground "DimGray"))))
+     `(dired-ignored ((t (:inherit shadow :foreground "#999"))))
      `(dired-k-added ((t (:foreground ,coloradd :weight bold))))
      `(dired-k-commited ((t (:foreground ,coloradd :weight bold))))
      `(dired-k-directory ((t nil)))
@@ -243,15 +243,32 @@
      ;;
      ;; helm
      ;;
-     `(helm-candidate-number ((t nil)))
-     `(helm-header ((t (:foreground ,color3 :slant italic))))
+     `(helm-header ((t (:inherit header-line))))
+     `(helm-source-header ((t (:foreground ,color2 :box (:line-width 3 :color ,background)))))
      `(helm-match ((t (:foreground ,color1))))
      `(helm-selection ((t (:background ,selection))))
-     `(helm-source-header ((t (:foreground ,color2))))
-
+     `(helm-visible-mark ((t (:weight bold))))
+     `(helm-action ((t nil)))
+     ;; in mode line
+     `(helm-candidate-number ((t (:foreground ,color2))))
+     ;; grep
      `(helm-grep-file ((t (:inherit compilation-info))))
      `(helm-grep-finish ((t nil)))
      `(helm-grep-lineno ((t (:inherit compilation-line-number))))
+     `(helm-grep-match ((t (:foreground ,color1))))
+     ;; helm files
+     `(helm-ff-denied ((t (:foreground "#c22"))))
+     `(helm-ff-directory ((t (:inherit font-lock-function-name-face))))
+     `(helm-ff-dotted-directory ((t (:foreground "#999"))))
+     `(helm-ff-executable ((t (:foreground "#2c2"))))
+     `(helm-ff-file ((t (:inherit default))))
+     `(helm-ff-invalid-symlink ((t (:background "black" :foreground "#c22"))))
+     ;; buffers
+     `(helm-buffer-file ((t (:inherit default))))
+     `(helm-buffer-modified ((t (:foreground "orange"))))
+     `(helm-buffer-directory ((t (:inherit font-lock-function-name-face))))
+     `(helm-buffer-saved-out ((t (:foreground "#c22")))) ;; modified outside
+     `(helm-non-file-buffer ((t (:foreground "#999"))))
 
      ;;
      ;; ivy
