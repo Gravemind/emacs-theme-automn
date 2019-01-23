@@ -44,8 +44,8 @@
 
       (useless      "#602929")
 
-      (ansi-bold-blue "#4B84B8")
-      (ansi-bold-cyan "#71bebe")
+      (ansi-bold-blue "#5b90bf")
+      (ansi-bold-cyan "#6cc6c3")
 
       (winframe       "#2a2e30")
       (winframe-fg    "#808080")
@@ -275,9 +275,13 @@
                     (set-face-background 'default "#202020"))
                 ))
 
-    (setq-default ansi-color-names-vector
-                  ["#666666" "#cf6171" "#B8EB6C" "#fff796" "#4B84B8" "#cf9ebe" "#71bebe" "#ffffff"]
-                  )
+    (setq-default
+     ansi-color-names-vector
+     [
+      ;;"#666666" "#ad5252" "#6fae6f" "#b6a849" "#4e789d" "#a15e7a" "#55aaa7" "#ffffff"
+      "#666666" "#c96969" "#8dca8d" "#f7bc75" ; FIXME: should be "#d2c360", but also used for helm-do-grep-ag match
+      "#5b90bf" "#bb7793" "#6cc6c3" "#ffffff"
+      ])
 
     ;; #9CABBA
     ;; #A59FA8
