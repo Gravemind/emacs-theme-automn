@@ -19,7 +19,7 @@
 
 (deftheme autumn "Low contrast dark autumn theme")
 
-(let (
+(let* (
       (background   "#202020")
       (foreground   "#b0b0b0")
       (cursor       "#00ffff")
@@ -47,10 +47,13 @@
       (ansi-bold-blue "#4B84B8")
       (ansi-bold-cyan "#71bebe")
 
-      (winframe-border "#354044")
-      (winframe-active "#354044")
-      (winframe-inacti "#253034")
-      (winframe-fringe "#5d696d")
+      (winframe       "#2a2e30")
+      (winframe-fg    "#808080")
+      (winframe-border background)
+      (winframe-active winframe)
+      (winframe-inacti winframe)
+      (winframe-fringe-fg "#5d696d")
+      (winframe-fringe-bg winframe)
 
       )
 
@@ -81,16 +84,19 @@
      `(font-lock-comment-face ((t (:foreground ,comment :slant italic))))
      `(shadow ((t (:foreground ,comment))))
 
-     ;; Mode line
-     `(mode-line ((t (:background ,winframe-active :foreground "#a0a0a0" :box (:line-width 4 :color ,winframe-active) :weight normal))))
-     `(mode-line-inactive ((t (:inherit mode-line :background ,winframe-inacti :foreground "#a0a0a0" :box (:line-width 4 :color ,winframe-inacti) :weight normal))))
+     ;; Modeline
+     `(mode-line ((t (:background ,winframe-active :foreground ,winframe-fg
+                                  :box (:line-width 4 :color ,winframe-active) :weight normal))))
+     `(mode-line-inactive ((t (:inherit mode-line :background ,winframe-inacti
+                                  :box (:line-width 4 :color ,winframe-inacti)))))
+     `(header-line ((t (:inherit mode-line-inactive))))
      `(mode-line-buffer-id ((t (:foreground "#d0d0d0"))))
      `(mode-line-highlight ((t (:box nil))))
      `(vertical-border ((t (:foreground ,winframe-border))))
      `(window-divider ((t (:foreground ,winframe-border))))
      `(window-divider-first-pixel ((t (:inherit window-divider))))
      `(window-divider-last-pixel ((t (:inherit window-divider))))
-     `(fringe ((t (:foreground ,winframe-fringe :background ,background))))
+     `(fringe ((t (:foreground ,winframe-fringe-fg, :background ,winframe-fringe-bg))))
 
      ;; White space mode
      `(whitespace-space-before-tab ((t (:background ,useless))))
