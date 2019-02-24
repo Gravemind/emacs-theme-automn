@@ -82,7 +82,7 @@
      ;; Comments
      `(font-lock-comment-delimiter-face ((t (:foreground ,comment))))
      `(font-lock-comment-face ((t (:foreground ,comment :slant italic))))
-     `(shadow ((t (:foreground ,comment))))
+     `(shadow ((t (:foreground "#777"))))
 
      ;; Modeline
      `(mode-line ((t (:background ,winframe-active :foreground ,winframe-fg
@@ -212,6 +212,11 @@
      `(magit-branch-remote ((t (:foreground "LightSkyBlue1"))))
      ;; disable remote head branch face, make it like any other remote branch
      `(magit-branch-remote-head ((t (:inherit magit-branch-remote))))
+
+     `(transient-disabled-suffix ((t (:background "red4" :foreground "black" :weight bold))))
+     `(transient-enabled-suffix ((t (:background "green4" :foreground "black" :weight bold))))
+     `(transient-mismatched-key ((t (:background "#302820"))))
+     `(transient-nonstandard-key ((t (:background "#302820"))))
 
      ;;
      ;; auto-highlight-symbol
