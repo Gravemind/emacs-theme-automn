@@ -68,6 +68,7 @@
      `(cursor ((t (:background ,cursor))))
 
      `(default ((t (:foreground ,foreground))))
+     `(link ((t (:foreground ,otherkeyw :underline t))))
 
      ;; Languages
      `(font-lock-builtin-face ((t (:foreground ,otherkeyw))))
