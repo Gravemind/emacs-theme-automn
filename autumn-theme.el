@@ -154,6 +154,10 @@
      `(dired-k-modified ((t (:foreground ,colorrem :weight bold))))
      `(dired-k-untracked ((t (:foreground "#8B3D3D" :weight bold))))
 
+     `(org-block ((t (:inherit default :background "#1c1c1c"))))
+     `(org-block-end-line ((t (:inherit org-block-begin-line))))
+     `(org-meta-line ((t (:inherit font-lock-comment-face :background "#1c1c1c"))))
+
      ;;
      ;; compilation
      ;;
