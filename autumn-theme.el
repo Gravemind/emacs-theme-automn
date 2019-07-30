@@ -28,7 +28,8 @@
 
       (selection    "#303030")
 
-      (comment      "#909090")
+      (comment      "#707478")
+      (doc          "#808890")
 
       (color1       "#f7bc75")
       (color2       "#d47f54")
@@ -81,8 +82,10 @@
      `(font-lock-variable-name-face ((t (:foreground ,color1))))
 
      ;; Comments
-     `(font-lock-comment-delimiter-face ((t (:foreground ,comment))))
      `(font-lock-comment-face ((t (:foreground ,comment :slant italic))))
+     `(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face))))
+     `(font-lock-doc-face ((t (:foreground ,doc))))
+
      `(shadow ((t (:foreground "#777"))))
 
      ;; Modeline
