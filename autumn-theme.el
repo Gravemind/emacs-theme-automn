@@ -43,6 +43,10 @@
       (colorrem-bg  "#493434")
       (coloradd-bg  "#384a36")
 
+      (bluefg2      "#99A7AF")
+      (bluefg3      "#6D767B")
+      (bluefg4      "#45494B")
+
       (useless      "#602929")
 
       (ansi-bold-blue "#5b90bf")
@@ -86,7 +90,7 @@
      `(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face))))
      `(font-lock-doc-face ((t (:foreground ,doc))))
 
-     `(shadow ((t (:foreground "#777"))))
+     `(shadow ((t (:foreground ,comment))))
 
      ;; Modeline
      `(mode-line ((t (:background ,winframe-active :foreground ,winframe-fg
@@ -212,10 +216,11 @@
      `(magit-section-highlight ((t (:background ,bg-hl))))
      `(magit-diff-context ((t nil)))
      `(magit-diff-context-highlight ((t (:background ,bg-hl))))
-     `(magit-diff-file-heading ((t (:background "#000" :foreground "#bbb"))))
-     `(magit-diff-file-heading-highlight ((t (:inherit magit-file-heading :background "#111"))))
-     `(magit-diff-hunk-heading ((t (:background "#333" :foreground "#ddd"))))
-     `(magit-diff-hunk-heading-highlight ((t (:background "#444" :foreground "#ddd"))))
+
+     `(magit-diff-file-heading ((t (:foreground ,bluefg2 :overline ,bluefg3))))
+     `(magit-diff-file-heading-highlight ((t (:inherit magit-diff-file-heading :background ,bg-hl))))
+     `(magit-diff-hunk-heading ((t (:foreground ,bluefg3 :overline ,bluefg4))))
+     `(magit-diff-hunk-heading-highlight ((t (:inherit magit-diff-hunk-heading :background ,bg-hl))))
 
      `(magit-diff-none ((nil ())))
      ;`(magit-diff-removed-highlight ((t (:background ,background :foreground ,colorrem))))
