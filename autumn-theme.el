@@ -28,13 +28,21 @@
 
       (selection    "#303030")
 
-      (comment      "#707478")
-      (doc          "#808890")
-
       (color1       "#f7bc75")
       (color2       "#d47f54")
       (color3       "#ab5b48")
       (color4       "#8A423f")
+
+      (bluefg1      "#adcbdd")
+      (bluefg2      "#97b0be")
+      (bluefg3      "#82959f")
+      (bluefg4      "#6d7a82")
+      (bluefg5      "#596166")
+      (bluefg6      "#45494b")
+
+      (comment      bluefg5)
+      (doc          bluefg4)
+
       (strings      "#b2ad79")
       (otherkeyw    "#61cfd4")
 
@@ -42,10 +50,6 @@
       (coloradd     "#6AAB6A")
       (colorrem-bg  "#493434")
       (coloradd-bg  "#384a36")
-
-      (bluefg2      "#99A7AF")
-      (bluefg3      "#6D767B")
-      (bluefg4      "#45494B")
 
       (useless      "#602929")
 
@@ -217,9 +221,9 @@
      `(magit-diff-context ((t nil)))
      `(magit-diff-context-highlight ((t (:background ,bg-hl))))
 
-     `(magit-diff-file-heading ((t (:foreground ,bluefg2 :overline ,bluefg3))))
-     `(magit-diff-file-heading-highlight ((t (:inherit magit-diff-file-heading :background ,bg-hl))))
-     `(magit-diff-hunk-heading ((t (:foreground ,bluefg3 :overline ,bluefg4))))
+     `(magit-diff-file-heading ((t (:foreground ,bluefg2 :box (:line-width 4 :color ,background)))))
+     `(magit-diff-file-heading-highlight ((t (:inherit magit-diff-file-heading :background ,bg-hl :box (:line-width 4 :color ,bg-hl)))))
+     `(magit-diff-hunk-heading ((t (:foreground ,bluefg4))))
      `(magit-diff-hunk-heading-highlight ((t (:inherit magit-diff-hunk-heading :background ,bg-hl))))
 
      `(magit-diff-none ((nil ())))
