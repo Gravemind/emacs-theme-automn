@@ -169,6 +169,23 @@
      `(org-block-end-line ((t (:inherit org-block-begin-line))))
      `(org-meta-line ((t (:inherit font-lock-comment-face :background "#1c1c1c"))))
 
+     ;; Outlines (org, markdown)
+     `(outline-base ((t (:overline t :box (:line-width 4 :color ,background)))))
+     `(outline-1 ((t (:inherit outline-base :foreground ,color1))))
+     `(outline-2 ((t (:inherit outline-base :foreground ,color2))))
+     `(outline-3 ((t (:inherit outline-base :foreground ,color3))))
+     `(outline-4 ((t (:inherit outline-base :foreground ,color4))))
+     `(outline-5 ((t (:inherit outline-base :foreground ,strings))))
+     `(outline-6 ((t (:inherit outline-base :foreground ,doc))))
+     `(outline-7 ((t (:inherit outline-base :foreground ,comment))))
+     `(markdown-header-delimiter-face ((t (:inherit outline-1 :foreground ,comment :overline ,comment))))
+     `(markdown-header-face-1 ((t (:inherit outline-1))))
+     `(markdown-header-face-2 ((t (:inherit outline-2))))
+     `(markdown-header-face-3 ((t (:inherit outline-3))))
+     `(markdown-header-face-4 ((t (:inherit outline-4))))
+     `(markdown-header-face-5 ((t (:inherit outline-5))))
+     `(markdown-header-face-6 ((t (:inherit outline-6))))
+
      ;;
      ;; compilation
      ;;
@@ -409,6 +426,11 @@
       "compilation-message-face."
       :group 'compilation)
     (setq-default compilation-message-face 'compilation-message-face-face)
+
+    (defface outline-base
+      '((t))
+      "Face inherited by all outlines."
+      :group 'outlines)
 
     )
   )
