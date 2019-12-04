@@ -170,7 +170,7 @@
      `(org-meta-line ((t (:inherit font-lock-comment-face :background "#1c1c1c"))))
 
      ;; Outlines (org, markdown)
-     `(outline-base ((t (:overline t :box (:line-width 4 :color ,background)))))
+     `(outline-base ((t (:box (:line-width 5 :color ,background)))))
      `(outline-1 ((t (:inherit outline-base :foreground ,color1))))
      `(outline-2 ((t (:inherit outline-base :foreground ,color2))))
      `(outline-3 ((t (:inherit outline-base :foreground ,color3))))
