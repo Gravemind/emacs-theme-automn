@@ -47,9 +47,15 @@
       (otherkeyw    "#61cfd4")
 
       (colorrem     "#B95151")
+      (colorrem-bg  "#432f2d")
+      (colorrem-bg2 "#2f2523")
       (coloradd     "#6AAB6A")
-      (colorrem-bg  "#493434")
-      (coloradd-bg  "#384a36")
+      (coloradd-bg  "#2f422f")
+      (coloradd-bg2 "#232c24")
+      (colorC-bg    "#433f2d")
+      (colorC-bg2   "#2f2c23")
+      (colorD-bg    "#352e40")
+      (colorD-bg2   "#29252e")
 
       (useless      "#602929")
 
@@ -218,6 +224,26 @@
      `(flycheck-inline-warning ((t (:inherit compilation-warning :background "#181818" :box (:line-width 4 :color "#181818")))))
 
      ;;
+     ;; ediff
+     ;;
+     `(ediff-current-diff-A ((t (:background ,colorrem-bg2))))
+     `(ediff-current-diff-B ((t (:background ,coloradd-bg2))))
+     `(ediff-current-diff-C ((t (:background ,colorC-bg2))))
+     `(ediff-current-diff-Ancestor ((t (:background ,colorD-bg2))))
+     `(ediff-fine-diff-A ((t (:background ,colorrem-bg))))
+     `(ediff-fine-diff-B ((t (:background ,coloradd-bg2))))
+     `(ediff-fine-diff-C ((t (:background ,colorC-bg))))
+     `(ediff-fine-diff-Ancestor ((t (:background ,colorD-bg))))
+     `(ediff-even-diff-A ((t (:background ,bg-hl))))
+     `(ediff-even-diff-B ((t (:background ,bg-hl))))
+     `(ediff-even-diff-C ((t (:background ,bg-hl))))
+     `(ediff-even-diff-Ancestor ((t (:background ,bg-hl))))
+     `(ediff-odd-diff-A ((t (:background ,bg-hl))))
+     `(ediff-odd-diff-B ((t (:background ,bg-hl))))
+     `(ediff-odd-diff-C ((t (:background ,bg-hl))))
+     `(ediff-odd-diff-Ancestor ((t (:background ,bg-hl))))
+
+     ;;
      ;; diff
      ;;
      `(diff-context ((t nil)))
@@ -233,6 +259,19 @@
      `(diff-refine-removed ((t (:background ,colorrem-bg))))
      `(diff-refine-added   ((t (:background ,coloradd-bg))))
 
+     ;;
+     ;; smerge
+     ;;
+     `(smerge-base ((t (:background "#181818"))))
+     `(smerge-lower ((t (:background "#181818"))))
+     `(smerge-markers ((t (:background "#181818"))))
+     `(smerge-refined-added ((t (:background ,coloradd-bg))))
+     `(smerge-refined-removed ((t (:background ,colorrem-bg))))
+     `(smerge-upper ((t (:background "#181818"))))
+
+     ;;
+     ;; magit
+     ;;
      `(magit-item-highlight ((t (:background ,bg-hl))))
      `(magit-section-highlight ((t (:background ,bg-hl))))
      `(magit-diff-context ((t nil)))
@@ -251,18 +290,6 @@
      `(magit-diff-removed ((t (:foreground ,colorrem))))
      `(magit-diff-added ((t (:foreground ,coloradd))))
 
-     `(smerge-mine ((t (:background nil))))
-     `(smerge-lower ((t (:background nil))))
-     `(smerge-base ((t (:background nil))))
-     `(smerge-other ((t (:background nil))))
-     `(smerge-upper ((t (:background nil))))
-
-     `(smerge-refined-removed ((t (:background ,colorrem-bg))))
-     `(smerge-refined-added   ((t (:background ,coloradd-bg))))
-
-     ;;
-     ;; magit
-     ;;
      `(magit-branch-local ((t (:foreground "DarkSeaGreen2"))))
      `(magit-branch-remote ((t (:foreground "LightSkyBlue1"))))
      ;; disable remote head branch face, make it like any other remote branch
