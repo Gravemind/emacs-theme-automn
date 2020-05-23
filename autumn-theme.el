@@ -172,6 +172,9 @@
      `(dired-k-modified ((t (:foreground ,colorrem :weight bold))))
      `(dired-k-untracked ((t (:foreground "#8B3D3D" :weight bold))))
 
+     `(org-table ((t (:foreground ,bluefg2))))
+     `(markdown-table-face ((t (:foreground ,bluefg2))))
+
      `(org-meta-line ((t (:inherit font-lock-comment-face))))
      `(org-block-end-line ((t (:inherit org-block-begin-line))))
 
