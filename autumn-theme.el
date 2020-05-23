@@ -62,12 +62,12 @@
       (ansi-bold-blue "#5b90bf")
       (ansi-bold-cyan "#6cc6c3")
 
-      (winframe       "#2a2e30")
-      (winframe-fg    "#808080")
-      (winframe-border background)
+      (winframe       "#1a1a1a")
+      (winframe-fg    "#707070")
+      (winframe-border "#141414")
       (winframe-active winframe)
       (winframe-inacti winframe)
-      (winframe-fringe-fg "#5d696d")
+      (winframe-fringe-fg "#404040")
       (winframe-fringe-bg winframe)
 
       )
