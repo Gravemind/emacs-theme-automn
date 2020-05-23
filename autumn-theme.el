@@ -44,7 +44,7 @@
       (doc          bluefg4)
 
       (strings      "#b2ad79")
-      (otherkeyw    "#61cfd4")
+      (link         "#61cfd4")
 
       (colorrem     "#B95151")
       (colorrem-bg  "#432f2d")
@@ -83,10 +83,10 @@
      `(cursor ((t (:background ,cursor))))
 
      `(default ((t (:foreground ,foreground))))
-     `(link ((t (:foreground ,otherkeyw :underline t))))
+     `(link ((t (:foreground ,link :underline t))))
 
      ;; Languages
-     `(font-lock-builtin-face ((t (:foreground ,otherkeyw))))
+     `(font-lock-builtin-face ((t (:foreground ,link))))
      `(font-lock-preprocessor-face ((t (:foreground ,color4))))
      `(font-lock-constant-face ((t (:foreground ,color3))))
      `(font-lock-function-name-face ((t (:foreground ,color1))))
@@ -182,7 +182,7 @@
      `(markdown-inline-code-face ((t (:foreground ,bluefg2))))
      `(org-verbatim ((t (:foreground ,strings))))
 
-     `(markdown-url-face ((t (:foreground ,otherkeyw))))
+     `(markdown-url-face ((t (:foreground ,link))))
 
      ;; Make org-indent fake indentation blend with fringe
      `(org-indent ((t (:background ,winframe-fringe-bg))))
@@ -336,8 +336,8 @@
      ;;
      ;; ido
      ;;
-     `(ido-first-match ((t (:foreground ,otherkeyw))))
-     `(ido-only-match ((t (:foreground ,otherkeyw))))
+     `(ido-first-match ((t (:foreground ,link))))
+     `(ido-only-match ((t (:foreground ,link))))
      `(ido-virtual ((t (:foreground ,comment))))
      `(ido-subdir ((t nil)))
 
