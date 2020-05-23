@@ -390,6 +390,18 @@
     (if (window-system)
         (set-face-background 'default background))
 
+    ;;
+    ;; Enable Window Divider (pixel/border line between windows)
+    ;;
+    (if (window-system)
+        (setq-default
+         window-divider-default-places t ;; 'right-only
+         window-divider-default-bottom-width 2
+         window-divider-default-right-width 2
+         )
+      (window-divider-mode 1)
+      )
+
     ;; if we are in a windowed emacs, set the backgroud, else let it transparent for terminals
     (add-hook 'after-make-frame-functions
               (lambda (frame)
