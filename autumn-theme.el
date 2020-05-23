@@ -96,7 +96,8 @@
      `(font-lock-variable-name-face ((t (:foreground ,color1))))
 
      ;; Comments
-     `(font-lock-comment-face ((t (:foreground ,comment :slant italic))))
+     `(font-lock-comment-face ((t (:foreground ,comment ;; :slant italic
+                                               ))))
      `(font-lock-comment-delimiter-face ((t (:inherit font-lock-comment-face))))
      `(font-lock-doc-face ((t (:foreground ,doc))))
 
