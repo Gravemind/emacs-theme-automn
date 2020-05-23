@@ -175,6 +175,11 @@
      `(org-block-end-line ((t (:inherit org-block-begin-line))))
      `(org-meta-line ((t (:inherit font-lock-comment-face :background "#1c1c1c"))))
 
+     ;; Make org-indent fake indentation blend with fringe
+     `(org-indent ((t (:background ,winframe-fringe-bg))))
+     `(org-hide ((t (:background ,winframe-fringe-bg :foreground ,winframe-fringe-bg))))
+     ;; org-indent-boundary-char is not fontified, see below for workarround
+
      ;; Outlines (org, markdown)
      `(outline-base ((t ())))
      `(outline-1 ((t (:inherit outline-base :height 1.2 :foreground ,color1))))
@@ -303,7 +308,6 @@
      ;;
      ;; auto-highlight-symbol
      ;;
-
      `(ahs-plugin-defalt-face ((t (:foreground nil :background nil :underline "cyan"))))
      `(ahs-face ((t (:foreground nil :background nil :underline "Orange1"))))
      `(ahs-definition-face ((t (:foreground nil :background nil :underline t))))
@@ -401,6 +405,17 @@
          )
       (window-divider-mode 1)
       )
+
+    ;;
+    ;; Workaround to make org-indent fake indentation blend with fringe.
+    ;;
+    ;; Org-indent last space (org-indent-boundary-char) is not fontified, it has
+    ;; default face. Workarround that by hiding it a zero-width whitespace.
+    ;;
+    (if window-system
+        (setq-default
+         org-indent-boundary-char ?​;; << there is a zero-width space here between ? and ;
+        ))
 
     ;; if we are in a windowed emacs, set the backgroud, else let it transparent for terminals
     (add-hook 'after-make-frame-functions
