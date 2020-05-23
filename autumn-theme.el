@@ -172,9 +172,17 @@
      `(dired-k-modified ((t (:foreground ,colorrem :weight bold))))
      `(dired-k-untracked ((t (:foreground "#8B3D3D" :weight bold))))
 
-     `(org-block ((t (:inherit default :background "#1c1c1c"))))
+     `(org-meta-line ((t (:inherit font-lock-comment-face))))
      `(org-block-end-line ((t (:inherit org-block-begin-line))))
-     `(org-meta-line ((t (:inherit font-lock-comment-face :background "#1c1c1c"))))
+
+     `(org-block ((t (:inherit default :foreground ,bluefg2 :background "#242424"))))
+     `(markdown-pre-face ((t (:inherit default :foreground ,bluefg2 :background "#242424"))))
+
+     `(org-code ((t (:foreground ,bluefg2))))
+     `(markdown-inline-code-face ((t (:foreground ,bluefg2))))
+     `(org-verbatim ((t (:foreground ,strings))))
+
+     `(markdown-url-face ((t (:foreground ,otherkeyw))))
 
      ;; Make org-indent fake indentation blend with fringe
      `(org-indent ((t (:background ,winframe-fringe-bg))))
@@ -190,7 +198,8 @@
      `(outline-5 ((t (:inherit outline-base :foreground ,strings))))
      `(outline-6 ((t (:inherit outline-base :foreground ,doc))))
      `(outline-7 ((t (:inherit outline-base :foreground ,comment))))
-     `(markdown-header-delimiter-face ((t (:inherit outline-1 :foreground ,comment :overline ,comment))))
+     `(markdown-header-delimiter-face ((t (:inherit outline-1 :foreground ,comment))))
+     `(markdown-header-face ((t (:inherit outline-base))))
      `(markdown-header-face-1 ((t (:inherit outline-1))))
      `(markdown-header-face-2 ((t (:inherit outline-2))))
      `(markdown-header-face-3 ((t (:inherit outline-3))))
