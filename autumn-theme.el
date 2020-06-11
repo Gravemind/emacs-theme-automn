@@ -402,6 +402,13 @@
      `(which-key-command-description-face ((t :foreground ,color2)))
      `(which-key-key-face ((t :foreground ,color1)))
 
+     ;;
+     ;; evil
+     ;;
+     `(evil-goggles-delete-face ((t (:background ,colorrem-bg2))))
+     `(evil-goggles-paste-face ((t (:background ,coloradd-bg2))))
+     `(evil-goggles-yank-face ((t (:background ,colorD-bg2))))
+
      )
 
     (if (window-system)
