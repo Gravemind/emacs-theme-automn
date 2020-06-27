@@ -380,6 +380,14 @@
      `(helm-buffer-directory ((t (:inherit font-lock-function-name-face))))
      `(helm-buffer-saved-out ((t (:foreground "#c22")))) ;; modified outside
      `(helm-non-file-buffer ((t (:foreground "#999"))))
+     ;; helm-ls-git
+     `(helm-ls-git-added-copied-face ((t (:foreground ,term-green))))
+     `(helm-ls-git-added-modified-face ((t (:foreground ,term-yellow)))) ;; new file, added and modified
+     `(helm-ls-git-untracked-face ((t (:foreground ,term-red))))
+     `(helm-ls-git-deleted-not-staged-face ((t (:foreground ,term-blue))))
+     `(helm-ls-git-deleted-and-staged-face ((t (:foreground ,term-green))))
+     `(helm-ls-git-modified-not-staged-face ((t (:foreground ,term-blue))))
+     `(helm-ls-git-modified-and-staged-face ((t (:foreground ,term-green))))
 
      ;;
      ;; ivy
