@@ -101,6 +101,7 @@
      `(font-lock-string-face ((t (:foreground ,strings))))
      `(font-lock-type-face ((t (:foreground ,color2))))
      `(font-lock-variable-name-face ((t (:foreground ,color1))))
+     `(sh-heredoc ((t (:foreground ,strings))))
 
      ;; Comments
      `(font-lock-comment-face ((t (:foreground ,comment ;; :slant italic
