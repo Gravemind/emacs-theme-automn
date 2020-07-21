@@ -375,6 +375,7 @@
      `(helm-ff-executable ((t (:foreground "#2c2"))))
      `(helm-ff-file ((t (:inherit default))))
      `(helm-ff-invalid-symlink ((t (:background "black" :foreground "#c22"))))
+     `(helm-ff-file-extension ((t)))
      ;; buffers
      `(helm-buffer-file ((t (:inherit default))))
      `(helm-buffer-modified ((t (:foreground "orange"))))
