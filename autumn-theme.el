@@ -219,6 +219,14 @@
      `(markdown-header-face-6 ((t (:inherit outline-6))))
 
      ;;
+     ;; wgrep
+     ;;
+     `(wgrep-delete-face ((t :background ,colorrem-bg)))
+     `(wgrep-face ((t :background ,colorC-bg)))
+     `(wgrep-file-face ((t :background ,colorC-bg)))
+     `(wgrep-done-face ((t :background ,coloradd-bg)))
+
+     ;;
      ;; compilation
      ;;
      `(success ((t (:foreground ,coloradd :weight normal :underline nil))))
