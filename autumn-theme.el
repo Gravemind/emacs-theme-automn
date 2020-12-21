@@ -195,6 +195,8 @@
 
      `(markdown-url-face ((t (:foreground ,link))))
 
+     `(fill-column-indicator ((t (:foreground ,winframe-border))))
+
      ;; Make org-indent fake indentation blend with fringe
      `(org-indent ((t (:background ,winframe-fringe-bg))))
      `(org-hide ((t (:background ,winframe-fringe-bg :foreground ,winframe-fringe-bg))))
