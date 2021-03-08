@@ -267,7 +267,7 @@
      `(ediff-current-diff-C ((t (:background ,colorC-bg2))))
      `(ediff-current-diff-Ancestor ((t (:background ,colorD-bg2))))
      `(ediff-fine-diff-A ((t (:background ,colorrem-bg))))
-     `(ediff-fine-diff-B ((t (:background ,coloradd-bg2))))
+     `(ediff-fine-diff-B ((t (:background ,coloradd-bg))))
      `(ediff-fine-diff-C ((t (:background ,colorC-bg))))
      `(ediff-fine-diff-Ancestor ((t (:background ,colorD-bg))))
      `(ediff-even-diff-A ((t (:background ,bg-hl))))
