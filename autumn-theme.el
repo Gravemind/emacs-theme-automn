@@ -477,6 +477,8 @@
      (vector
       "#666666" term-red term-green term-yellow term-blue term-mangenta term-cyan "#ffffff"
       ))
+    ;; rustic use xterm-color and defines it's own default colors
+    (setq-default rustic-ansi-faces ansi-color-names-vector)
 
     ;; #9CABBA
     ;; #A59FA8
