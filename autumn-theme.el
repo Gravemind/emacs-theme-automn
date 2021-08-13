@@ -339,7 +339,7 @@
      ;;
      ;; auto-highlight-symbol
      ;;
-     `(ahs-plugin-defalt-face ((t (:foreground nil :background nil :underline "cyan"))))
+     `(ahs-plugin-default-face ((t (:foreground nil :background nil :underline ,cursor))))
      `(ahs-face ((t (:foreground nil :background nil :underline "Orange1"))))
      `(ahs-definition-face ((t (:foreground nil :background nil :underline t))))
 
