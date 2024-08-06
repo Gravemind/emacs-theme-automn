@@ -141,7 +141,7 @@
      `(semantic-tag-boundary-face ((t (:overline "#303030"))))
      `(font-lock-warning-face ((t (:foreground "#B34949" :weight normal :underline nil))))
 
-     `(match ((t (:background nil :foreground "RoyalBlue2"))))
+     `(match ((t (:background unspecified :foreground "RoyalBlue2"))))
 
      `(mumamo-background-chunk-major ((t (:background "#202020"))))
      `(mumamo-background-chunk-submode1 ((t (:background "gray10"))))
@@ -155,7 +155,7 @@
      `(buffer-menu-star-buffer ((t (:foreground ,comment :slant normal))))
      `(buffer-menu-buffer-name ((t (:foreground ,color2 :weight normal))))
      `(buffer-menu-read-only-mark ((t (:foreground ,strings))))
-     `(buffer-menu-directory-buffer ((t (:foreground ,color3 :background nil))))
+     `(buffer-menu-directory-buffer ((t (:foreground ,color3 :background unspecified))))
 
      `(buffer-menu-mode ((t (:foreground ,color3))))
      `(buffer-menu-file-name ((t (:foreground ,color3))))
@@ -248,12 +248,12 @@
      ;; `(compilation-warning ((t (:foreground "#66D466" :weight normal :underline nil))))
      ;; `(compilation-info ((t (:foreground "#79B379" :weight normal :underline nil))))
 
-     `(flymake-errline ((t (:background nil :underline "#CC2222"))))
-     `(flymake-warnline ((t (:background nil :underline "#22CC22"))))
+     `(flymake-errline ((t (:background unspecified :underline "#CC2222"))))
+     `(flymake-warnline ((t (:background unspecified :underline "#22CC22"))))
 
-     `(rtags-errline ((t (:background nil :underline "#CC2222"))))
-     `(rtags-warnline ((t (:background nil :underline "#22CC22"))))
-     `(rtags-fixitline ((t (:background nil :underline "#FFBB00"))))
+     `(rtags-errline ((t (:background unspecified :underline "#CC2222"))))
+     `(rtags-warnline ((t (:background unspecified :underline "#22CC22"))))
+     `(rtags-fixitline ((t (:background unspecified :underline "#FFBB00"))))
 
      `(flycheck-inline-error   ((t (:inherit compilation-error   :background "#181818" :box (:line-width 4 :color "#181818")))))
      `(flycheck-inline-info    ((t (:inherit compilation-info    :background "#181818" :box (:line-width 4 :color "#181818")))))
@@ -290,8 +290,8 @@
      `(diff-indicator-removed ((t (:background ,colorrem :foreground ,background))))
      `(diff-indicator-added   ((t (:background ,coloradd :foreground ,background))))
 
-     `(diff-removed ((t (:background nil :foreground ,colorrem))))
-     `(diff-added ((t (:background nil :foreground ,coloradd))))
+     `(diff-removed ((t (:background unspecified :foreground ,colorrem))))
+     `(diff-added ((t (:background unspecified :foreground ,coloradd))))
      `(diff-refine-removed ((t (:background ,colorrem-bg))))
      `(diff-refine-added   ((t (:background ,coloradd-bg))))
 
@@ -339,14 +339,14 @@
      ;;
      ;; auto-highlight-symbol
      ;;
-     `(ahs-plugin-default-face ((t (:foreground nil :background nil :underline ,cursor))))
-     `(ahs-face ((t (:foreground nil :background nil :underline "Orange1"))))
-     `(ahs-definition-face ((t (:foreground nil :background nil :underline t))))
+     `(ahs-plugin-default-face ((t (:foreground unspecified :background unspecified :underline ,cursor))))
+     `(ahs-face ((t (:foreground unspecified :background unspecified :underline "Orange1"))))
+     `(ahs-definition-face ((t (:foreground unspecified :background unspecified :underline t))))
 
      ;;
      ;; rtags
      ;;
-     `(rtags-skippedline ((t (:background nil))))
+     `(rtags-skippedline ((t (:background unspecified))))
 
      ;;
      ;; Man
@@ -420,8 +420,8 @@
      ;;
      ;; visible-mark
      ;;
-     `(visible-mark-face1 ((t (:background "#080808" :foreground nil))))
-     `(visible-mark-face2 ((t (:background "#181818" :foreground nil))))
+     `(visible-mark-face1 ((t (:background "#080808" :foreground unspecified))))
+     `(visible-mark-face2 ((t (:background "#181818" :foreground unspecified))))
 
      ;;
      ;; which-key
