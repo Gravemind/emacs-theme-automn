@@ -438,13 +438,13 @@
 
      )
 
-    (if (window-system)
+    (when window-system
         (set-face-background 'default background))
 
     ;;
     ;; Enable Window Divider (pixel/border line between windows)
     ;;
-    (if (window-system)
+    (when window-system
         (setq-default
          window-divider-default-places t ;; 'right-only
          window-divider-default-bottom-width 2
@@ -459,7 +459,7 @@
     ;; Org-indent last space (org-indent-boundary-char) is not fontified, it has
     ;; default face. Workarround that by hiding it a zero-width whitespace.
     ;;
-    (if window-system
+    (when window-system
         (setq-default
          org-indent-boundary-char ?​;; << there is a zero-width space here between ? and ;
         ))
@@ -468,7 +468,7 @@
     (add-hook 'after-make-frame-functions
               (lambda (frame)
                 (select-frame frame)
-                (if (window-system frame)
+                (when (window-system frame)
                     (set-face-background 'default "#202020"))
                 ))
 
