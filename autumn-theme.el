@@ -316,10 +316,17 @@
      `(magit-diff-context ((t nil)))
      `(magit-diff-context-highlight ((t (:background ,bg-hl))))
 
-     `(magit-diff-file-heading ((t (:foreground ,bluefg2 :box (:line-width 4 :color ,background)))))
-     `(magit-diff-file-heading-highlight ((t (:inherit magit-diff-file-heading :background ,bg-hl :box (:line-width 4 :color ,bg-hl)))))
+     `(magit-diff-file-heading ((t (:foreground ,bluefg2
+                                                :height 1.2
+                                                ;; :box (:line-width 4 :color ,background)
+                                                ))))
+     `(magit-diff-file-heading-highlight ((t (:background ,bg-hl
+                                                          ;; :box (:line-width 4 :color ,bg-hl)
+                                                       ))))
      `(magit-diff-hunk-heading ((t (:foreground ,bluefg4))))
      `(magit-diff-hunk-heading-highlight ((t (:inherit magit-diff-hunk-heading :background ,bg-hl))))
+     `(magit-diff-revision-summary ((t (:height 1.2))))
+     `(magit-diff-revision-summary-highlight ((t ())))
 
      `(magit-diff-none ((nil ())))
      ;`(magit-diff-removed-highlight ((t (:background ,background :foreground ,colorrem))))
