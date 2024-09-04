@@ -112,13 +112,11 @@
      `(shadow ((t (:foreground ,comment))))
 
      ;; Modeline
-     `(mode-line ((t (:background ,winframe-active :foreground ,winframe-fg
-                                  :box (:line-width 4 :color ,winframe-active) :weight normal))))
-     `(mode-line-inactive ((t (:inherit mode-line :background ,winframe-inacti
-                                  :box (:line-width 4 :color ,winframe-inacti)))))
+     `(mode-line ((t (:background ,winframe-active :foreground ,winframe-fg :weight normal))))
+     `(mode-line-inactive ((t (:inherit mode-line :background ,winframe))))
      `(header-line ((t (:inherit mode-line-inactive))))
      `(mode-line-buffer-id ((t (:foreground "#d0d0d0"))))
-     `(mode-line-highlight ((t (:box nil))))
+     `(mode-line-highlight ((t (:background ,bg-hl))))
      `(vertical-border ((t (:foreground ,winframe-border))))
 
      `(window-divider ((t (:foreground ,winframe))))
