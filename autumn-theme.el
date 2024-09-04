@@ -20,11 +20,11 @@
 (deftheme autumn "Low contrast dark autumn theme")
 
 (let* (
-      (background   "#202020")
+      (background   "#101010")
       (foreground   "#b0b0b0")
       (cursor       "#00ffff")
 
-      (bg-hl        "#282828")
+      (bg-hl        "#1c1c1c")
 
       (selection    "#303030")
 
@@ -62,12 +62,12 @@
       (ansi-bold-blue "#5b90bf")
       (ansi-bold-cyan "#6cc6c3")
 
-      (winframe       "#1a1a1a")
+      (winframe       "#080808")
       (winframe-fg    "#707070")
-      (winframe-border "#141414")
+      (winframe-border winframe)
       (winframe-active winframe)
       (winframe-inacti winframe)
-      (winframe-fringe-fg "#404040")
+      (winframe-fringe-fg "#505050")
       (winframe-fringe-bg winframe)
 
       (term-red      "#c96969")
@@ -120,9 +120,11 @@
      `(mode-line-buffer-id ((t (:foreground "#d0d0d0"))))
      `(mode-line-highlight ((t (:box nil))))
      `(vertical-border ((t (:foreground ,winframe-border))))
-     `(window-divider ((t (:foreground ,winframe-border))))
+
+     `(window-divider ((t (:foreground ,winframe))))
      `(window-divider-first-pixel ((t (:inherit window-divider))))
      `(window-divider-last-pixel ((t (:inherit window-divider))))
+
      `(fringe ((t (:foreground ,winframe-fringe-fg, :background ,winframe-fringe-bg))))
 
      ;; White space mode
@@ -195,7 +197,7 @@
 
      `(markdown-url-face ((t (:foreground ,link))))
 
-     `(fill-column-indicator ((t (:foreground ,winframe-border))))
+     `(fill-column-indicator ((t (:foreground ,winframe))))
 
      ;; Make org-indent fake indentation blend with fringe
      `(org-indent ((t (:background ,winframe-fringe-bg))))
@@ -441,17 +443,17 @@
     (when window-system
         (set-face-background 'default background))
 
-    ;;
-    ;; Enable Window Divider (pixel/border line between windows)
-    ;;
-    (when window-system
-        (setq-default
-         window-divider-default-places t ;; 'right-only
-         window-divider-default-bottom-width 2
-         window-divider-default-right-width 2
-         )
-      (window-divider-mode 1)
-      )
+    ;; ;;
+    ;; ;; Enable Window Divider (pixel/border line between windows)
+    ;; ;;
+    ;; (when window-system
+    ;;     (setq-default
+    ;;      window-divider-default-places t ;; 'right-only
+    ;;      window-divider-default-bottom-width 4
+    ;;      window-divider-default-right-width 4
+    ;;      )
+    ;;   (window-divider-mode 1)
+    ;;   )
 
     ;;
     ;; Workaround to make org-indent fake indentation blend with fringe.
@@ -469,7 +471,7 @@
               (lambda (frame)
                 (select-frame frame)
                 (when (window-system frame)
-                    (set-face-background 'default "#202020"))
+                    (set-face-background 'default "#101010"))
                 ))
 
     (setq-default
