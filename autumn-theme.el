@@ -252,6 +252,7 @@
 
      `(flymake-errline ((t (:background unspecified :underline "#CC2222"))))
      `(flymake-warnline ((t (:background unspecified :underline "#22CC22"))))
+     `(flymake-note ((nil)))
 
      `(rtags-errline ((t (:background unspecified :underline "#CC2222"))))
      `(rtags-warnline ((t (:background unspecified :underline "#22CC22"))))
